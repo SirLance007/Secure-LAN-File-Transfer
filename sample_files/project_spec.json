@@ -1,0 +1,17 @@
+{
+  "project_title": "Secure LAN File Transfer using AES & Socket Programming",
+  "version": "1.0.0",
+  "author": "Prankur Project",
+  "year": 2026,
+  "protocols": {
+    "transport": "TCP/IP Stream Sockets",
+    "framing": "12-Byte Fixed Header (Magic + Version + Opcode + Length)",
+    "cryptography": {
+      "cipher": "AES-256",
+      "supported_modes": ["GCM", "CBC"],
+      "key_derivation": "PBKDF2-HMAC-SHA256 (100k rounds)",
+      "integrity": "SHA-256 + GCM Tag / HMAC"
+    },
+    "authentication": "Salted PBKDF2 Password Storage (SQLite)"
+  }
+}

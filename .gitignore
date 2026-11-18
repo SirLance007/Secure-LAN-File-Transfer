@@ -1,0 +1,26 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Environments
+venv/
+.venv/
+env/
+ENV/
+
+# Database files
+*.db
+*.sqlite3
+
+# PDF documents
+*.pdf
+
+# Client downloads directory
+client_downloads/*
+!client_downloads/.gitkeep

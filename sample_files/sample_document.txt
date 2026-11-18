@@ -1,0 +1,23 @@
+PROJECT SPECIFICATION: Secure LAN File Transfer System
+Course: Computer Networks & Cryptography Laboratory
+Team: Prankur Project Team
+Academic Year: 2026
+
+1. Abstract:
+This project implements a secure end-to-end file transfer protocol over Local Area Network (LAN)
+using Python socket programming, Advanced Encryption Standard (AES-256 in GCM and CBC modes),
+salted PBKDF2-HMAC-SHA256 password authentication, and SHA-256 message integrity verification.
+
+2. Security Guarantees:
+- Confidentiality: AES-256 symmetric cipher prevents passive eavesdropping on the LAN (Wireshark/tcpdump).
+- Authenticity & Non-Repudiation: AEAD (GCM) / Encrypt-then-MAC (CBC) prevents active MITM packet tampering.
+- Integrity: Pre- and post-transfer SHA-256 verification guarantees 100% bit-exact transmission.
+- Authentication: Passwords hashed with PBKDF2 (100,000 iterations) and 16-byte cryptographically secure salt.
+
+3. Testing Checklist:
+[x] Socket Framing & Buffer Streaming
+[x] User Registration & Session Token Issuance
+[x] AES-256-GCM / CBC Local Encryption
+[x] LAN Packet Transmission
+[x] Server-Side Authenticated Decryption
+[x] Bit-Level Integrity Check

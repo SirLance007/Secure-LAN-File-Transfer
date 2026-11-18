@@ -1,0 +1,3 @@
+# Dependencies for Secure LAN File Transfer System
+cryptography>=41.0.0
+pycryptodome>=3.20.0
